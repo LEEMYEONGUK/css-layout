@@ -7,9 +7,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   /* 다중 라인일때 align-content 사용 */
-  align-content: center;
+  /* align-content: center; */
   row-gap: 10px;
   column-gap: 20px;
+  align-items: center;
 }
 
 .box {
@@ -23,13 +24,12 @@ body {
   align-items: center;
 }
 
-/* default order = 0 */
-.box:nth-child(3) {
-  background-color: blueviolet;
-  order: 2;
+.box:first-child{
+  align-self: flex-start;
 }
 
-.box:nth-child(6) {
-  background-color: aqua;
-  order: 1;
+.box:last-child{
+  align-self: flex-end;
 }
+
+/* order, align-self 는 자식요소에게!! */

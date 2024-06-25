@@ -1,15 +1,12 @@
 body {
   display: flex;
   height: 100vh;
-  gap: 10px;
   justify-content: flex-start;
   /* flex-flow: row wrap; 아래 두줄과 같은 의미*/
   flex-direction: row;
   flex-wrap: wrap;
   /* 다중 라인일때 align-content 사용 */
   /* align-content: center; */
-  row-gap: 10px;
-  column-gap: 20px;
   align-items: center;
 }
 
@@ -25,11 +22,19 @@ body {
 .box:first-child{
   background-color: tomato;
   flex-grow: 1;
+  flex-shrink: 3;
+}
+
+.box:nth-child(2){
+  background-color: orange;
+  flex-grow: 2;
+  flex-shrink: 0;
 }
 
 .box:last-child{
   background-color: teal;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
-/* order, align-self, flex-grow 는 자식요소에게!! */
+/* order, align-self, flex-grow(default:0), flex-shrink(default:1) 는 자식요소에게!! */

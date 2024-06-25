@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  height: 100vh;
+  gap: 10px;
+  justify-content: flex-start;
+  /* flex-flow: row wrap; 아래 두줄과 같은 의미*/
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  color: white;
+  font-size: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

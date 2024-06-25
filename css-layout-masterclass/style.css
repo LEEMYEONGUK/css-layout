@@ -6,6 +6,10 @@ body {
   /* flex-flow: row wrap; 아래 두줄과 같은 의미*/
   flex-direction: row;
   flex-wrap: wrap;
+  /* 다중 라인일때 align-content 사용 */
+  align-content: center;
+  row-gap: 10px;
+  column-gap: 20px;
 }
 
 .box {

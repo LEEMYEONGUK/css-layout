@@ -14,9 +14,7 @@ body {
 }
 
 .box {
-  width: 200px;
   height: 200px;
-  background-color: tomato;
   color: white;
   font-size: 36px;
   display: flex;
@@ -25,11 +23,13 @@ body {
 }
 
 .box:first-child{
-  align-self: flex-start;
+  background-color: tomato;
+  flex-grow: 1;
 }
 
 .box:last-child{
-  align-self: flex-end;
+  background-color: teal;
+  flex-grow: 1;
 }
 
-/* order, align-self 는 자식요소에게!! */
+/* order, align-self, flex-grow 는 자식요소에게!! */

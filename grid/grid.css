@@ -1,0 +1,18 @@
+
+.child:first-child {  
+  /* grid-row-start: 1;
+  grid-row-end: -1; 
+  grid-row: korea / greece; */
+  background-color: khaki;
+  grid-row: span 2;
+}
+
+.child:last-child {
+  background-color: turquoise;
+  grid-column: potato / span 2;
+  /*
+  grid-column-start: 2;
+  grid-column-end: -1; 
+  grid-column: potato / brocoli;
+  */
+}

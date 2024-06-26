@@ -1,0 +1,31 @@
+.father {
+  display: grid;
+  grid-template-columns: 100px 200px 50px;
+  grid-template-rows: 200px 100px;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 20px;
+}
+
+.child {
+  background: tomato;
+  display: flex;
+  color: white;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+}
+
+.child:last-child{
+  background: turquoise;
+  /* grid-column-start: 2;
+  grid-column-end: 4; */
+  grid-column: 2 / -1;
+  /* grid-column-end: -1; 마지막 줄까지*/
+}
+
+.child:first-child{
+  /* grid-row-start: 1;
+  grid-row-end: 3; */
+  grid-row: 1 / 3;
+}

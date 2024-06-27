@@ -8,13 +8,28 @@
   grid-auto-columns: 1fr;
   /* 그리드 오토 플로우 row가 기본값 */
   grid-auto-flow: column;
+  /* width 가 없을 때 stretch 유효 + stretch가 기본값 */
+  /* justify-items: stretch; */
+  /* height가 없을 때 stretch 유효 */
+  /* align-items: stretch; */
+  place-items: center center;
 }
 
 .child {
+  width: 50px;
+  height: 50px;
   background-color: tomato;
   color: white;
   font-size: 28;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.child:nth-child(6) {
+  background-color: teal;
+  align-self: end;
+  justify-self: start;
+  /* align 먼저 */
+  place-self: start end;
 }

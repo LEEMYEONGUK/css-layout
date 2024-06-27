@@ -1,14 +1,8 @@
 .father {
   display: grid;
   gap: 10px;
-  min-height: 100vh;
-  grid-template-columns: repeat(3, 100px);
-  grid-template-rows: repeat(2, 100px);
-  background-color: lightblue;
-  /* 남는 공간이 있어야 유효! */
-  justify-content: center;
-  align-content: center;
-  place-content: center;
+  height: 100vh;
+  grid-template-columns: 1fr max-content 1fr;
 }
 
 .child {

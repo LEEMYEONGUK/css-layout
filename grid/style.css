@@ -2,9 +2,10 @@
   display: grid;
   gap: 10px;
   height: 100vh;
-  grid-template-columns: 1fr minmax(250px, 1fr) 1fr;
-  /* grid-template-columns: repeat(3, minmax(300px, 1fr)); */
-
+  /* fill이 여백 살림 fit은 여백 채움*/
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+  /* auto-fill, auto-fit 같아 보이지만 여백이 있을 때 차이 드러남 */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) */
 }
 
 .child {

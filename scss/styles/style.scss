@@ -1,0 +1,17 @@
+// css 변수 설정
+// :root {
+//   --bgColor:red;
+// }
+
+// body {
+//   background-color: var(--bgColor);
+// }
+
+$bgColor: gray;
+
+body {
+  background-color: $bgColor;
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
